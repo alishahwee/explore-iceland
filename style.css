@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+  --red-blue-gradient: linear-gradient(
+    90deg,
+    rgba(204, 64, 64, 1) 0%,
+    rgba(173, 92, 194, 1) 50%,
+    rgba(52, 188, 215, 1) 100%
+  );
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand:hover {
+  background: var(--red-blue-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  height: 100%;
+}
+
+.carousel-text {
+  position: absolute;
+  color: #fff;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+#intro {
+  color: #fff;
+  background: var(--red-blue-gradient);
+}
+
+#features,
+#footer {
+  text-align: center;
+}
+
+/* VIDEO */
+section {
+  background-color: #eee;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-group {
+  display: flex;
+}
+
+.testimonial-scrollspy {
+  position: relative;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Edge and IE */
+.testimonial-scrollspy {
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.testimonial-scrollspy::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .nav-link:hover {
+    padding-bottom: 5px;
+    background: var(--red-blue-gradient) center bottom transparent no-repeat;
+    background-size: 90% 2px;
+  }
+
+  .carousel-inner {
+    background-color: #000;
+  }
+
+  .carousel-inner img {
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel-inner img {
+    height: 100vh;
+  }
+}
